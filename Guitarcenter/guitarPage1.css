@@ -1,0 +1,40 @@
+.box{
+    border: 2px solid black;
+    margin: AUTO;
+    width: 604px;
+    height: 550px;
+}
+.navigation{
+    border: 2px solid black;
+    width: 603px;
+    height: 21px;
+}
+.picture {
+    border: 2px solid black;
+    margin: auto;
+    width: 279px;
+    height: 127px;
+}
+#but1{
+    margin-left: 58px;
+}
+#but2{
+    margin-left: 368px;
+}
+.price{
+    border: 1px solid black;
+    margin: auto;
+    width: 95px;
+    height: 33px;
+}
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="guitarPage1.css">
+
+
+

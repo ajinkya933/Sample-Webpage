@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GuitarCenter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .picture{
+            border: 2px transparent;
+            margin: auto;
+            width: 330px;
+            height: 168px;
+        }
+
+        #X{
+            margin-left: 135px;
+        }
+        #Y{
+            margin-left: 479px;
+        }
+        #Z{
+            float: right;
+        }
+        body{
+            background-image: url("guitar_background3.jpg");
+
+        }
+        img{
+            width: 330px;
+            height: 168px;
+
+        }
+        p{
+            color:black;
+            background-color: lightgoldenrodyellow;
+            backface-visibility: ;
+        }
+        #guitarName{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            margin-left: 455px;
+            font-size: large;
+        }
+        #guitarPrice{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-size: large;
+            margin-left: 489px;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Guitar Center</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<span id="guitarName" ></span>
+<br>
+<div class="picture"><img id="myImage" src="main.jpg"></div>
+
+<span id="guitarPrice"></span>
+
+<br>
+<div class="container">
+    <button type="button" id="X" class="btn btn-primary btn-lg" style="background-color:#5c28a5" onclick="myFuncPrev()">Previous</button>
+
+    <button type="button" id="Y" class="btn btn-primary btn-lg" style="background-color:#5c28a5" onclick="myFuncNext()">Next </button>
+    <br><br>
+
+
+
+    <details>
+        <summary class="well well-sm" style="background-color:yellowgreen;color:black">Product-Information</summary>
+        <p id="productInfo"></p>
+    </details>
+
+
+
+    <details>
+        <summary class="well well-sm" style="background-color:yellowgreen;color:black">Shipping Information</summary>
+        <p id="shippingInfo"></p>
+    </details>
+
+
+    <details>
+        <summary class="well well-sm" style="background-color:yellowgreen;color:black">Customer Reviews</summary>
+        <p id="reviewInfo"></p>
+    </details>
+
+
+    <button type="submit" id="Z" class="btn btn-success btn-lg" style="background-color:#95243e "  onclick="navigateToPage2()">BUY</button>
+
+
+</div>
+
+
+<script src="guitar.js"></script>
+
+</body>
+</html>

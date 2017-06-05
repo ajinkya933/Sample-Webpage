@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GuitarCenter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .picture{
+            border: 2px transparent;
+            margin: auto;
+            width: 330px;
+            height: 168px;
+        }
+        img{
+            width: 330px;
+            height: 168px;
+
+        }
+        .MainContainer{
+            position: relative;
+            /*border: 1px solid black;*/
+            margin: auto;
+            padding: 23px 16px 20px 20px;
+            width: 770px;
+            height: 191px;
+            column-count: 2;
+        }
+        h1 {
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        body{
+            background-image: url("guitar_background3.jpg");
+
+        }
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Guitar Center</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li class="active"><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="picture"><img id="myImage" src="main.jpg"></div>
+<br>
+<div class="MainContainer">
+    <h1>Congratulations</h1>
+    <p>Your Order has been confirmed.</p>
+
+    <br><br>
+        <p class="well well-sm" style="background-color:yellowgreen;color:black;text-align: center">Details</summary>
+    <p><strong>Guitar Name:</strong><span id="name3"></span></p>
+    <p><strong>Guitar Price:</strong><span id="price3"></span></p>
+    <p><strong>Shipping Charges:</strong><span id="ship3"></span></p>
+</div>
+<button type="submit" class="btn btn-primary btn-lg" style="background-color:#95243e;margin-left:470px;margin-bottom: 50px" onclick="navigateHome()">Go To Home</button>
+
+
+
+<script src="guitarPage3.js"></script>
+</body>
+</html>

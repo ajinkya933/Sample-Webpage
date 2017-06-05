@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar Center</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        dt{
+
+            color:forestgreen;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+
+        }
+
+
+        .MainContainer{
+            position: relative;
+            /*border: 1px solid black;*/
+            margin: 19px;
+            padding: 2px 16px 20px 20px;
+            width: 1006px;
+            height: 400px;
+        }
+        .box1{
+            border: 2px solid black;
+            position: absolute;
+            padding: 2px 16px 20px 20px;
+            width: 300px;
+            left: 100px;
+            top: 25px;
+            box-shadow: 10px 10px 5px grey;
+        }
+        .box2{
+            border: 2px solid black;
+            position: absolute;
+            left: 537px;
+            padding: 2px 16px 20px 20px;
+            width: 300px;
+            height:236px;
+            top: 25px;
+            display:none;
+            box-shadow: 10px 10px 5px grey;
+        }
+        body{
+            background-image: url("guitar_background3.jpg");
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Guitar Center</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li class="active"><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<img class="panel-title pull-left" src="main.jpg" class="img-thumbnail img-responsive" alt="Cinque Terre" width="100" height="100" >
+<div class="panel-body pull-left">
+    <dl>
+        <dt>Price</dt>
+        <dd id="page2Price">hi</dd><br>
+        <dt>Shipping Details</dt>
+        <dd id="page2Shipping"></dd><br>
+        <dt>Stock Availability</dt>
+        <dd id="page2Stock"></dd>
+    </dl>
+
+</div>
+<img class="panel-body" id="page2Image"   class="img-thumbnail img-responsive" alt="Cinque Terre" width="100" height="100" >
+<div class="MainContainer">
+    <div class="box1">
+        <div class="containerX">
+        <h2>Purchase Details</h2>
+        <form class="form-inline" action="">
+        <div class="form-group">
+        <input type="text" class="form-control"  placeholder="First Name"  id="FirstNameX" required>
+        </div><br><br>
+        <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Last Name" id="LastNameX" required>
+        </div><br><br>
+
+        <div class="form-group">
+        <input type="tel" class="form-control"  placeholder="Contact Number" id="ContactNumberX" required>
+        </div><br><br>
+        <div class="form-group">
+        <input type="email" class="form-control"  placeholder="Email Address" id="emailX" required>
+        </div>
+
+        <br><br>
+        <button type="button" class="btn btn-primary btn-lg" style="background-color:#5c28a5" onclick="reviewFunction()">Review Order</button>
+        </form>
+        </div>
+
+
+    </div>
+    <div id="box2" class="box2">
+        <div class="containerX">
+            <h2>Review Details</h2>
+            <span >First Name: </span><strong><span id="fname"></span><br></strong>
+            <span >Last Name: </span><strong><span id="lname"></span><br></strong>
+            <span >Email: </span><strong><span id="email"></span><br></strong>
+            <span >Contact Number:</span><strong><span id="ContactNumber"></span></strong>
+            <br><br>
+            <button type="submit" class="btn btn-primary btn-lg" style="background-color:#95243e" onclick="navigatePage3()">Confirm and Buy</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="guitarPage2.js"></script>
+<script src="guitar.js"></script>
+
+</body>
+</html>
